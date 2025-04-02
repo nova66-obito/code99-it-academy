@@ -1,0 +1,568 @@
+.overall{
+  background: var(--sec);
+  min-height: 100vh;
+}
+.sign{
+  padding-top: 150px;
+  min-height: 100vh;
+}
+.sign-cover{
+  width: 80%;
+  min-height: 300px;
+  background:linear-gradient(to left,green,rgb(17, 70, 17));
+  border-radius: 40px;
+  justify-content: space-between;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.sign-cover > .s-text1{
+  width: 60%;
+  color: var(--txt);
+  min-height: 300px;
+  padding: 30px;
+}
+.sign-cover > .s-text2{
+  width: 35%;
+  min-height: 300px;
+  justify-content: flex-start;
+}
+/* head text in form */
+form > .min-head > h4{
+  font-weight: bolder;
+  text-align: center;
+}
+.min-head > h4 > span{
+  color: var(--main);
+}
+/* this for the font */
+.cal-icon >  h1{
+   width: 70px;
+   height: 70px;
+   background: var(--txt);
+   border-radius: 50%;
+   place-content: center;
+   display: grid;
+   color: var(--main);
+}
+/* this for the form */
+.s-text2 > form{
+  background-color: var(--txt);
+  min-height: 350px;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 0 10px black;
+}
+/* submit */
+.s-text > .submit{
+  background: url(https://img1.picmix.com/output/stamp/normal/2/8/5/2/1742582_4e782.gif) center;
+  background-color: var(--txt);
+  min-height: 350px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 0 10px black;
+}
+.submit > h4{
+  font-weight: bolder;
+}
+ form > div > input{
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+  border: 1px solid black;
+  padding: 3px;
+  outline: none;
+  font-size: 14px;
+}
+div > input:focus{
+  border:  2px solid lightblue;
+}
+.c-robot{
+  background: grey;
+  font-size: 15px;
+  width: 60%;
+  min-height: 30px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.c-robot > input{
+    width: 15%;
+}
+.c-robot > small{
+  padding: 10px;
+} 
+form  > button{
+   border: 1px solid var(--main);
+   margin: 10px 0;
+   padding: 5px 10px;
+   text-transform: capitalize;
+   border-radius: 20px;
+   background: var(--main);
+   font-weight: bolder;
+   color: var(--txt);
+  }
+form > div > small{
+  color: red;
+}  
+/* this for the about train */
+.about-train{
+  min-height: 100vh;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
+.about-train > .t-about{
+  width: 50%;
+}
+/* this for the text  */
+.t-about > h2{
+  margin: 20px 0;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+.t-about > h2 > span{
+  color: var(--main);
+}
+.about-train > .t-pic{
+  width: 30%;
+  position: relative;
+  margin-top: 50px;
+}
+/*ths for the t-pic div */
+.t-pic > .t-photo{
+  width: 80%;
+  height:400px;
+}
+.t-photo > img{
+  width: 100%;
+  height: 350px;
+  filter:drop-shadow(-4px 0px 4px black);
+}
+/* tools used */
+.tools{
+  min-height: 40vh;
+}
+.tools > .tools-cover
+{
+  padding: 30px;
+}
+.tools-cover > h1{
+  font-weight: bolder;
+}
+.tools-cover > h1 > span{
+  color: var(--main);
+}
+/* this for the training details */
+.t-details{
+  min-height: 100vh;
+}
+/* tool pic */
+.tools-pic{
+  justify-content: flex-start;
+  gap: 40px;
+  padding: 20px 0;
+}
+.tools-pic > img{
+  width: 140px;
+  height: 100px;
+}
+.tools-pic > img:hover{
+  filter: drop-shadow(0 0 10px black);
+}
+/* traing details */
+.t-detail{
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+}
+.t-detail > .detail-head{
+   width: 80%;
+   flex-direction: column;
+   gap: 20px;
+} 
+.detail-head > h1{
+  font-weight: bolder;
+}
+.detail-head > h1 > span{
+  color: var(--main);
+}
+.t-cover {
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 70px;
+}
+.t-cover > .details-box{
+  width: 300px;
+  min-height: 350px;
+  border: 2px dotted;
+  padding: 20px;
+  border-radius: 20px;
+}
+.details-box:hover{
+  background: var(--txt);
+  box-shadow: -4px 0 10px black;
+  transition:all 0.3s;
+}
+.details-box > img{
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+  filter: drop-shadow(0 0 10px red);
+}
+.details-box > h5{
+  font-weight:bolder;
+  margin: 10px 0;
+  color: var(--main);
+  text-decoration: underline black;
+}
+/* information */
+.info{
+  min-height: 50vh;
+}
+.info-cover{
+  width: 85%;
+  height: 150px;
+  background: var(--txt);
+  justify-content: space-around;
+  border-radius: 30px;
+  box-shadow: -5px 0 10px ;
+}
+/* this for the text */
+.info-txt{
+  padding: 10px;
+}
+.info-txt >h3{
+  margin: 10px 0;
+ font-weight: bolder;
+}
+.info-txt > p{
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.info-txt > a > button{
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: 1px solid var(--main);
+  background: var(--main);
+  color: var(--txt);
+  box-shadow:4px 4px 10px black;
+}
+.info-txt > a > button:hover{
+  scale: 0.9;
+  transition: all 0.5s;
+}
+/* this for the image */
+.info-cover > .info-pic{
+  width: 150px;
+  margin-top: -40px;
+}
+.info-pic > img{
+  width: 100%;
+  filter: drop-shadow(0 0 5px);
+}
+/* learn least */
+.learn-list{
+  min-height: 100vh;
+  padding: 20px;
+}
+.learn-list > h1{
+  font-weight: bolder;
+  padding-left: 30px;
+}
+.learn-list > h1 > span{
+  color: var(--main);
+}
+/* list cover */
+.list-over{
+  gap: 20px;
+  padding: 20px 0;
+}
+.list-over > div{
+  width: 50%;
+}
+.list-over > .list{
+  flex-direction: column;
+  gap: 20px;
+}
+/* roll */
+.d-roll{
+  width: 95%;
+  font-size: 15px;
+  border-radius: 40px;
+  padding: 10px;
+  height: 80px;
+  overflow: hidden;
+  box-shadow: -4px 0 10px;
+  background-color: gainsboro;
+}
+.g-roll{
+  height: 140px;
+  transition: all 0.5s linear;
+}
+.g-roll > .top > .top-text > P:last-child{
+  transform: rotate(180deg);
+  transition: all 0.4s;
+  margin-bottom: 0;
+}
+.top-text {
+  padding-left:10px;
+  padding-right: 10px;
+  justify-content: space-between;
+}
+.top > .top-text > h5{
+ font-weight: bold;
+ color: var(--main);
+}
+.g-roll > .bot{
+  font-size: 12px;
+}
+/* benefits */
+.benefits{
+  min-height: 70vh;
+}
+.benefits > .ben-cover{
+  width: 80%;
+  height: 350px;
+  box-shadow: -5px 0 10px black;
+  border-radius: 30px;
+  background:linear-gradient(to top,green,rgb(6, 68, 6));
+}
+/* this for the pic */
+.ben-cover > .ben-pic{
+  width: 30%;
+}
+.ben-cover > .ben-txt{
+  width:60%; 
+  color: var(--txt);
+  padding: 20px;
+}
+.ben-txt >h2{
+  position: relative;
+  font-weight: bolder;
+}
+.ben-txt > h2::after{
+  content: "";
+  position: absolute;
+  width: 50%;
+  left: 0;
+  height: 3px;
+  background: var(--txt);
+  bottom: -10px;
+}
+.ben-pic > img{
+  width: 100%;
+  height: 280px;
+}
+/* quest */
+.quest {
+  min-height: 80vh;
+  flex-direction: column;
+  gap: 30px;
+}
+.q-cover{
+  width: 70%;
+  min-height: 400px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.quest > h1{
+  font-weight: bolder;
+  padding-top:20px;
+}
+.quest > h1 >span{
+  color: var(--main);
+}
+.q-block {
+  width: 90%;
+  padding: 10px;
+  height: 50px;
+  box-shadow: -4px 4px 10px black;
+  overflow: hidden;
+  background: lavender;
+  border-radius: 10px;
+}
+.q-on{
+  min-height: 100px;
+}
+.q-block > .q-up{
+  justify-content: space-between;
+  height: 45px;
+}
+@media screen and (max-width:700px) and (min-width:300px){
+  .sign{
+    padding-top: 90px;
+  }
+  .sign-cover{
+    width: 90%;
+    justify-content: center;
+  }
+  .sign-cover > .s-text{
+    width: 100%;
+    font-size: 15px;
+  }
+  .cal-icon > h1{
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .show-join > b , .show-join > h5{
+    font-size: 10px;
+  }
+  /* this about */
+  .about-train{
+    padding-top: 30px;
+    flex-direction: column;
+  }
+  .about-train > .t-about{
+    width: 90%;
+  }
+  .t-about{
+    font-size: 10px;
+  }
+  .about-train > .t-pic{
+    width: 90%;
+  }
+  .t-pic > .t-photo {
+    width: 100%;
+  }
+  .t-pic > .t-photo {
+    width: 280px;
+  }
+  /* this for the tool */
+  .tools-pic{
+    gap: 10px;
+  }
+  .tools-pic > img{
+    width: 60px;
+    height: 50px;
+  }
+  /* this for traing work */
+  .detail-head > p{
+    font-size: 10px;
+  }
+  .t-cover{
+   padding: 20px 0;
+    gap: 30px;
+  }
+  .t-cover > .details-box{
+    width: 250px;
+    min-height: 150px;
+  }
+  /* this for the info */
+  .info-cover{
+    height: 120px;
+    padding:20px 0;
+  }
+  .info-txt >h3{
+    font-size: 10px;
+  }
+  .info-txt > p{
+    font-size: 7px;
+  }
+  .info-txt > a > button{
+    padding: 3px 10px;
+    font-size: 10px;
+  }
+  /* roll */
+  .list-over{
+    flex-direction: column;
+  }
+  .list-over > div{
+    width: 90%;
+  }
+  .d-roll{
+    height: 55px;
+  }
+  .g-roll{
+    height: 140px;
+  }
+  .top-text > h5{
+    font-size: 10px;
+  }
+  .top-text{
+   height: 15px;
+  }
+  .deg > p{
+    font-size: 10px;
+  }
+  .bot > p{
+    font-size: 10px;
+  }
+   /* benefits */
+   .benefits{
+    min-height: 50vh;
+   }
+   .benefits > .ben-cover{
+    width: 90%;
+    height: 150px;
+  }
+  .ben-pic> img{
+    height: 100px;
+  }
+  .ben-txt > p{
+    font-size: 5px;
+  }
+  .ben-txt > h2{
+    font-size: 8px;
+  }
+  .ben-txt > div > b{
+    font-size: 3px;
+  }
+  /* quest */
+  .quest{
+    gap: 0;
+  }
+  .quest > h1{
+    font-size: 20px;
+  }
+  .q-cover{
+    width: 100%;
+  }
+  .q-block{
+    width: 100%;
+  }
+  .q-up{
+    font-size: 12px;
+  }
+}
+
+/* tab model */
+@media screen and (max-width:900px) and (min-width:700px){
+  .sign{
+    padding-top: 130px;
+  }
+  .sign-cover > .s-text{
+    width: 100%;
+  }
+  .t-about{
+    font-size: 13px;
+  }
+  .t-pic > .t-photo {
+    width: 100%;
+  }
+  /* this for the details info */
+  .info-txt >h3{
+    font-size: 15px;
+  }
+  /* roll */
+  .bot > p{
+    font-size: 10px;
+  }
+  .g-roll>.top > .deg > p{
+    margin-bottom: 0;
+  }
+  /* benefits */
+  .benefits > .ben-cover{
+    width: 90%;
+    height: 200px;
+  }
+  .ben-pic> img{
+    height: 180px;
+  }
+  .ben-txt > p{
+    font-size: 10px;
+  }
+  .ben-txt > div > b{
+    font-size: 10px;
+  }
+}

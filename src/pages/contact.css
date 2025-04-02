@@ -1,0 +1,164 @@
+/* this for the contact */
+.contact{
+    min-height: 100vh;
+    flex-wrap: wrap;
+    padding-top: 130px;
+    justify-content: space-evenly;
+    padding-bottom:30px;
+}
+/* this for the text in the contact */
+.contact > .contact-text1{
+    width: 45%;
+}
+/* logo design */
+.c-text2 > .c-log > h1{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--main);
+    color:var(--txt);
+    display: grid;
+    place-content: center;
+}
+.cl-text > b{
+  color: var(--main);
+}
+.cl-text > a{
+    text-decoration: none;
+    color: var(--main);
+}
+.cl-text > a:hover{
+    text-decoration: underline;
+}
+.cont-head > h3{
+ font-weight: bolder;
+}
+.cont-head > h3 > span{
+    color: var(--main);
+}
+/* hr design */
+.co-txt-cover > p{
+  width: 100%;
+  height: 3px;
+  background: black;
+}
+.c-text > h1{
+  font-weight: bolder;
+}
+.c-text > h1 > span{
+    color: var(--main);
+}
+/* this for the form */
+.contact > .contact-text2{
+    width: 45%;
+    background: var(--txt);
+    min-height: 600px;
+    padding: 20px;
+    border-radius: 50px ;
+    box-shadow: 0 0 10px;
+}
+.text-ar > textarea{
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+    border:2px solid green;
+    outline: none;
+}
+.text-ar > textarea:focus{
+  box-shadow: 3px 1px 5px var(--main);
+}
+.text-ar > label{
+    font-weight: bolder;
+}
+.val > input{
+    padding: 10px;
+    border:2px solid green;
+    background: transparent;
+}
+.val > input:focus{
+    border:2px solid green;
+    box-shadow: 3px 1px 5px var(--main);
+}
+.val > label{
+    font-weight: bolder;
+}
+.check{
+    width: 30%;
+    background: gray;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 20px;
+    box-shadow: 2px -2px 5px;
+}
+.check > input{
+    width: 10%;
+}
+.contact-text2 > form > button{
+    border-radius:20px ;
+    padding: 5px 20px;
+    border: 1px solid var(--main);
+    background: var(--main);
+    font-weight: bolder;
+    color: var(--txt);
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+.contact-text2 > form > button:hover{
+    scale: 0.9;
+    box-shadow:0 4px black;
+}
+form > div > p{
+  color: red;
+}
+.check > small{
+  color:var(--txt);
+}
+.thank{
+  min-height: 100vh;
+  flex-direction: column;
+  background: url(https://img1.picmix.com/output/stamp/normal/2/8/5/2/1742582_4e782.gif) center;
+}
+.thank > h1 {
+   font-size:50px;
+   font-family: "Permanent Marker", cursive;
+   font-weight: bolder;
+   font-style: normal;
+   color: var(--main);
+}
+@media screen and (max-width:700px) and (min-width:300px){
+  .contact{
+    padding-top: 100px;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .c-text > h1
+  {
+    font-size: 20px;
+  }
+  .contact > .contact-text1{
+    width: 90%;
+  }
+ .cl-text > h5{
+     font-size: 13px;
+  }
+  .cl-text > b{
+    font-size: 15px;
+  }
+  .contact > .contact-text2{
+    width: 90%;
+  }
+  .check{
+    width: 45%;
+ }
+ footer{
+  padding-top: 0;
+ }
+}
+@media screen and (max-width:900px) and (min-width:700px){
+ *{
+    font-size: 13px;
+ }
+    .check{
+    width: 45%;
+ }
+}

@@ -1,0 +1,91 @@
+footer{
+    flex-direction: column;
+}
+.f-cover{
+    background-color: gainsboro;
+    gap: 30px;
+    min-height: 60vh;
+}
+.f-al{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+}
+.f-cover > div{
+    width: 10%;
+}
+.f-cover > .f-text{
+    width: 35%;
+}
+.f-cover > .git{
+    width: 30%;
+}
+.f-cover > .f-text > h1{
+    font-weight: bolder;
+    text-transform:uppercase;
+    font-size: 80px;
+    color: gray;
+}
+.f-cover > .f-text > p{
+    font-weight: bolder;
+}
+b{
+    margin: 10px 0;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color:var(--main);
+}
+.lic{
+    padding: 10px;
+    width: 100%;
+    background: gray;
+}
+@media screen and (max-width:700px) and (min-width:300px){
+    footer{
+        padding-top:40px ;
+    }
+    .f-cover{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .f-cover > div{
+       width: 90%;
+    }
+    .f-cover > .f-text > h1 {
+       font-size: 40px;
+    }
+    .f-cover > .f-text {
+        width: 90%;
+        padding-top: 20px;
+    }
+    .f-cover > .git {
+        width: 90%;
+    }
+    .lic > h1{
+        font-size: 12px;
+    }
+
+}
+@media screen and (max-width:900px) and (min-width:700px){
+   footer{
+    padding-top: 30px;
+   }
+    .f-cover{
+    padding: 30px;
+  }
+  .f-cover > div{
+    width: 20%;
+ }
+ .f-cover > .f-text > h1 {
+    font-size: 40px;
+ }
+ .f-cover > .f-text {
+     width: 30%;
+ }
+ .f-cover > .git {
+     width: 30%;
+ }
+}

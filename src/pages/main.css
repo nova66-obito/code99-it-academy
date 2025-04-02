@@ -1,0 +1,1198 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Grechen+Fuemen&family=Lilita+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&family=Permanent+Marker&family=Piedra&family=Rubik+Vinyl&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* this for the animation */
+.block1{
+  animation: move-side linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 35% ;
+}
+@keyframes move-side {
+  from{
+      opacity: 0;
+      transform:translatey(500px)
+  }
+  to{
+      opacity: 1;
+     transform: translatey(0px);
+  }
+}
+.block2{
+  animation: move-rigth linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 35% ;
+}
+@keyframes move-rigth {
+  from{
+      opacity: 0;
+      transform:translatex(-500px)
+  }
+  to{
+      opacity: 1;
+     transform: translatex(0px);
+  }
+}
+.block3{
+  animation: move-scale linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 35% ;
+}
+@keyframes move-scale {
+  from{
+      opacity: 0;
+      scale: 0;
+  }
+  to{
+      opacity: 1;
+      scale : 1;
+  }
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+.home > .text1{
+    width: 50%;
+}
+.home > .text2{
+    width: 30%;
+    height: 500px;
+    overflow: hidden;
+    padding:0px;
+    display: flex;
+    gap: 20px;
+}
+.text1 > h4{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.big-font{
+    padding: 10px 0;
+}
+.big-font > h1{
+   color: var(--main);
+   font-size: 60px;
+   font-weight: bolder;
+}
+/* this for the button */
+.click > .lk > a{
+  text-decoration: none;
+  color: var(--txt); 
+}
+.click > .lk2 > a{
+  text-decoration: none;
+  color: var(--main); 
+}
+.click > button{
+  padding: 10px 20px;
+  text-transform: capitalize;
+  font-weight: bolder;
+  border-radius: 30px;
+  border: 1px solid var(--main);
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.click > button::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color:var(--main);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.click > button:nth-child(2):hover::after{
+    width: 100%;
+    transition: all 0.5s;
+}
+.click > button:first-child:hover::after{
+    width: 100%;
+    background: var(--txt);
+    transition: all 0.5s;
+}
+.click >button:first-child:hover > a{
+  color: black;
+}
+.click >button:first-child{
+    background: black;
+    color: var(--txt);
+    border: 1px solid black;
+}
+.click > button:first-child:hover{
+    color: black;
+}
+.lk2:hover > a{
+  color: white;
+}
+/* image holder */
+.img-holder > img{
+  width: 100%;
+  padding: 10px 0;
+}
+.img-holder{
+    animation: moving infinite 2s linear;
+    width: 80px;
+    height: 300px;
+    gap: 20px;
+}
+/* text2 animation */
+.move2{
+    animation: move2 infinite 2s linear;
+}
+.img-holder > h1{
+  display: none;
+}
+.move > h1{
+  display: block;
+  height: 100px;
+}
+
+@keyframes moving {
+    to{
+        transform: translatey(-150px);
+    }
+}
+@keyframes move2 {
+    to{
+        transform: translatey(150px);
+    }
+}
+/* aboutpage */
+.about{
+    padding-top: 60px;
+    min-height: 20vh;
+    background: var(--sec);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.cover{
+    min-height:20vh;
+    background-color: black;
+    width: 80%;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    border-radius: 50px 50px 0px 0px;
+}
+.load-num{
+  width: 30%;
+}
+.load-num > h1{
+  font-weight: bolder;
+}
+.load-num > p{
+  font-weight: bolder;
+}
+/* about-us */
+.about-us > .details1{
+  width: 45%; 
+  min-height: 400px;
+}
+.about-us > .details2{
+  width: 45%;
+}
+.around{   
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    /* background: var(--main); */
+    position: relative;
+}
+.r-logo{
+  width: 230px;
+  height: 230px;
+  background: lightblue;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  padding: 10px;
+}
+.r-logo > img{
+  width: 200px;
+  height: auto;
+}
+.r-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotateText 10s linear infinite;
+}
+@keyframes rotateText {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+.r-text > p > span{
+  position: absolute;
+  left: 50%;
+  top:3px;
+  font-size: 1.5rem;
+  transform-origin: 0 150px;
+}
+/* button*/
+.about-txt > button{
+    margin: 20px 0;
+}
+.about-txt > button:hover{
+   background:var(--main) ;
+}
+.details2{
+   padding: 20px;
+}
+.about-txt > h1{
+  font-size: 45px;
+  color: var(--main);
+  font-weight: bolder;
+}
+.about-txt > h4{
+  font-weight: bolder;
+}
+.about-txt > button{
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  font-weight: bolder;
+  background: black;
+  color: var(--txt);
+  box-shadow: 2px 3px 5px rgb(58, 56, 56);
+  border: 1px solid black;
+}
+/* challenge page style */
+.challenge{
+  min-height: 100vh;
+  margin-top: 30px; 
+}
+.challenge > h2{
+  margin: 30px 0; 
+  font-weight: bolder;
+}
+.challenge > h1{
+   font-size: 55px;
+   margin: 30px 0;
+   color: var(--main);
+   font-weight: bolder;
+}
+/* list of the challenge */
+ /* this for the challenge list */
+ .c-list{
+  min-height: 80vh;
+  background:var(--main);
+}
+.c-list > .set1 ,.c-list > .set3{
+  min-height: 400px;
+  width: 40%;
+  /* background-color: red; */
+}
+/* this for the box details */
+.c-list > .set1 > .box {
+   background: var(--txt);
+   height: 350px;
+   width: 350px;
+   padding: 50px;
+   position: relative;
+   justify-self:center;
+   z-index: 1;
+}
+.box > p{
+  top: 10%;
+  right: -10px;
+  transform: rotate(45deg);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background:var(--txt);
+  z-index: -1;
+}
+/* this for the white line in center */
+.c-list > .set2{
+   width: 10px;
+   min-height: 80vh;
+   background:var(--txt);
+}
+/* this for  the content in the box */
+.set3 > .s-cover{
+  height: 200px;
+  position: relative;
+  /* background: violet; */
+}
+.s-cover > .round{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: black;
+  position: absolute;
+  top:0;
+  color: var(--txt);
+  left: -52px;
+  display: grid;
+  place-content: center;
+}
+.s-cover > .p-text{
+  height: 100px;
+  padding-left: 60px;
+  padding-top: 20px;
+  /* background:green; */
+}
+.round >h1{
+  font-weight: bolder;
+}
+.p-text > h1{
+  font-weight: bolder;
+  color: var(--txt);
+}
+/* reverse box order */
+.set1 > .box-2 > p{
+  left: -7px;
+}
+.box-reverse{
+  height: 200px;
+  position: relative;
+  /* background-color: aqua; */
+  justify-content: center;
+}
+.box-reverse > .cir{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: black;
+  top:0;
+  right: -52px;
+  position: absolute;
+  color: var(--txt);
+  display: grid;
+  place-content: center;
+  z-index: 1;
+}
+.box-reverse > .p-text{
+  height: 100px;
+  padding-top: 20px;
+  padding-right: 50px;
+  /* background: wheat; */
+  position: relative;
+}
+/* why chosse us */
+.choose{
+  flex-direction: column;
+  min-height: 100vh;
+}
+.choose > h1{
+  font-weight: bolder;
+}
+.choose > .c-cover{
+  width: 100%;
+  min-height: 400px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.c-cover > .grow{
+  width: 60px;
+  overflow: hidden;
+  background: rgb(8, 254, 8);
+  border-radius: 40px;
+  height: 400px;
+  flex-direction: column;
+  justify-content: end;
+  border: 2px dotted green;
+  color:aliceblue;
+}
+.c-cover > .grow:first-child{
+  background-color:rgb(31, 78, 31);
+}
+.c-cover > .grow:nth-child(2){
+  background-color:rgb(8, 101, 8);
+}
+.c-cover > .grow:nth-child(3){
+  background-color:rgb(35, 174, 35);
+}
+.c-cover > .grow:nth-child(4){
+  background-color:rgb(32, 215, 32);
+}
+.c-cover > .grow:nth-child(5){
+  background-color:rgb(72, 235, 72);
+}
+.g-text{
+  opacity: 0;
+  display: none;
+}
+.show{
+  transition: all 0.5s;
+  opacity: 1;
+  display: block;
+}
+.grow > button{
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+  border: 1px solid white;
+  font-weight: bolder;
+  font-size: 30px;
+}
+ .c-cover > .grow-text{
+   flex-grow: 0.3;
+   padding: 10px;
+   transition: all 0.5s;
+   justify-content: center;
+   font-size: 10px;
+   border-radius: 20px;
+}
+.c-cover > .grow-off{
+  flex-grow: 0;
+}
+.g-text > p{
+  font-size: 15px;
+  font-weight: bold;
+}
+/* course */
+.co-cover{
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+.co-cover > h1{
+  font-weight: bolder;
+}
+.box-cover{
+  width: 80%;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+}
+.box-cover > .box{
+  width: 250px;
+  border-radius: 20px;
+  min-height: 350px;
+  background: var(--txt);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+/* hover effect */
+.box-cover > .box::after{
+ position: absolute;
+ content: "";
+ width: 0%;
+ height: 100%;
+ top:0;
+ left: 40%;
+ z-index: -1;
+ scale: 0;
+ background: var(--main);
+}
+/* hover effect */
+.box-cover >.box:hover::after{
+  width: 100%;
+  scale: 1;
+  transition: all 0.5s;
+  left: 0;
+}
+.text-co > h4{
+  font-weight: bolder;
+  color: var(--main);
+}
+.box-cover > .box:hover{
+  color: var(--txt);
+}
+.box:hover >.text-co > h4{
+  color: var(--txt);
+}
+/*course log animation */
+.pic-co > img{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+.box:hover{
+  box-shadow: 0 0 20px black;
+}
+.text-co > a{
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid white;
+  font-weight: bolder;
+  color: var(--txt);
+  background: var(--main);
+  margin: 10px 0;
+  text-decoration: none;
+}
+.text-co > a:hover{
+  background: var(--txt);
+  color: var(--main);
+}
+/* rock */
+.rocket{
+  min-height: 50vh;
+}
+.r-cover{
+  height: 200px;
+  border-radius: 20px;
+  width: 70%;
+  background:lightgreen;
+  position: relative;
+  overflow: hidden;
+}
+/* this for the over cover image */
+.r-pic{
+  position: absolute;
+  width: 100%;
+  height: 180px;
+  top: -10px;
+  left: -300px;
+}
+.r-move{
+  animation: r-move 1.5s 1 forwards linear;
+}
+@keyframes r-move {
+  to{
+    width: 150%;
+    left: -90px;
+  }
+}
+.r-pic > img{
+  width: 100%;
+  height: 220px;
+}
+.txtover{
+  position: absolute;
+  width: 100%;
+  height: 200px;
+}
+.txtover > div{
+  width: 40%;
+}
+.txtover > .r-txt > h4{
+  font-weight: bolder;
+}
+.r-txt > button{
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid var(--main);
+  background: var(--main);
+  color: var(--txt);
+  text-transform: capitalize;
+}
+button > a{
+  color: white;
+  text-decoration: none;
+}
+/* this for rocket pic */
+.r-pic2 > img{
+  width: 250px;
+  height: 180px;
+}
+.r-pic2 > .r2{
+  animation: r2 1.5s 1 forwards linear;
+ }
+ @keyframes r2 {
+   to{
+     transform: translateX(440px);
+   }
+ }
+ /* placed in */
+ .place{
+  min-height: 70vh;
+  flex-direction: column;
+ }
+ .place > .placein{
+  min-height: 300px;
+  width: 100%;
+  flex-direction: column;
+  gap: 40px;
+ }
+ /* this for the place run */
+ .run-box{
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  gap: 5px;
+ }
+ /* this for the button moveing animation */
+.run-box > button{
+  border: 1px solid var(--main);
+  padding: 15px 50px;
+  border-radius: 5px;
+  background: var(--main);
+  color: var(--txt);
+  text-transform: capitalize;
+  animation: left-m infinite 2s linear;
+}
+@keyframes left-m {
+  from{
+    transform: translateX(150px);
+  }
+}
+/* rightside */
+.run-box2 > button{
+  animation: rigth-m infinite 2s linear;
+}
+@keyframes rigth-m {
+  from{
+    transform: translateX(-150px);
+  }
+}
+.place > h1{
+  font-weight: bolder;
+}
+.place > h1 > span{
+  color: var(--main);
+}
+/* blog */
+.blog{
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 80px;
+}
+.vi-blog {
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.b-tx > h1{
+  font-weight: bolder;
+}
+/* blog video */
+ .b-link{
+  width: 300px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+ }
+ iframe{
+  height: 200px;
+ }
+ .yt-link > a{
+   text-decoration: none;
+   color: black;
+ }
+ .yt-link > a:hover{
+  color: red;
+  text-decoration: underline black; 
+
+}
+ .yt-link > b:first-child{
+  color: red;
+  width: 30px;
+  height: 30px;
+  background: whitesmoke;
+  border: 1px dotted red;
+  border-radius: 50%;
+  display: grid;
+  place-content:center;
+ }
+/* code-link */
+.code-link{
+  min-height: 70vh;
+}
+.code-cover{
+  width: 80%;
+  min-height: 270px;
+  border-radius: 30px;
+  background: var(--main);
+  position: relative;
+  overflow: hidden;
+}
+.code-box1{
+  width: 250px;
+  height:250px;
+  border-radius: 50%;
+ border: 25px solid rgb(254, 184, 5);
+ position: absolute;
+ top: -80px;
+ left: -150px;
+}
+.code-box3{
+  width: 300px;
+  height:300px;
+  border-radius: 50%;
+ border: 40px solid rgb(240, 192, 70);
+ position: absolute;
+ bottom:-140px;
+ right:-150px;
+}
+.code-box2{
+  width: 60%;
+}
+.code-box2 > h2{
+  font-weight: bolder;
+  color: var(--txt);
+}
+.code-box2 > a > button{
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+/* faq */
+.faq{
+  min-height: 100vh;
+  gap: 10px;
+}
+.faq > .faq-box1{
+  width: 40%;
+  padding: 20px;
+  height: 400px;
+}
+.faq-box1 > h1{
+  font-weight: bolder;
+  font-size: 50px;
+  text-transform:uppercase;
+}
+.faq-box1 > p{
+  font-size: 25px;
+  margin: 20px 0;
+}
+.faq-box1 > button{
+  padding: 10px 40px;
+  border-radius: 30px;
+  background: var(--main);
+  border: 1px solid var(--main);
+  box-shadow: 0 0 10px black;
+  font-weight: bold;
+}
+.faq-box1 > button:hover{
+  transition: all 0.3s;
+  scale: 0.8;
+}
+.faq-box1 > button > a{
+  text-decoration: none;
+  color: white;
+}
+.faq-box1 >h1 >small{
+  text-transform: lowercase;
+}
+.faq > .faq-box2{
+  width: 50%;
+  flex-direction: column;
+  gap: 20px;
+}
+.faq-box2 > .faq-text{
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  overflow: hidden;
+  background-color: rgb(201, 197, 197);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.faq-text:hover{
+ background: lightgreen;
+ color:white;
+}
+.faq-box2 .roll{
+  height: 110px;
+  transition: all 0.5s ease-in-out;
+}
+.faq-text > .f-txt{
+  padding-top:10px;
+  gap: 20px;
+}
+.roll > .f-txt  > p:last-child{
+  rotate: 180deg;
+  transition: all 0.4s;
+}
+/* media for the phone */
+@media screen and (max-width: 700px) and (min-width:300px){
+  .home{
+    flex-direction: column;
+    padding-top:40px ;
+  }
+  .home > .text1{
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+  }
+  .home > .text2{
+    width: 100%;
+    opacity: 0.6;
+    justify-content: center;
+    transform: none;
+  }
+  .home > div{
+    position: absolute;
+  }
+  .text1 > h4{
+    font-size: 17px;
+  }
+  .big-font > h1{
+    font-size: 40px;
+    text-shadow: 2px 1px  0px black;
+  }
+  /* about */
+  .load-num > h1{
+    font-size: 20px;
+  }
+  .cover{
+    font-size: 10px;
+    width: 95%;
+  }
+  .about-us{
+    display: flex;
+    flex-direction: column;
+  }
+  .about-us > .details1 ,.about-us > .details2{
+    width: 100%;
+  }
+  .about-us > .details2{
+    margin-top: -80px;
+  }
+  .about-txt > h1{
+    font-size: 25px;
+  }
+  .about-txt > h4{
+    font-size: 20px;
+  }
+  .about-txt > button{
+    padding: 10px 20px;
+  }
+  /* about rotate letters */
+  .around{
+    width: 150px;
+    height: 200px;
+  }
+  .r-logo{
+    width: 120px;
+    height: 120px;
+  }
+  .r-text > p > span{
+    transform-origin: 0 100px;
+    font-size: 16px;
+  }
+  .r-text{
+    width: 90%;
+  }
+  .r-logo > img{
+    width: 100%;
+  }
+  /* challenge */
+  .c-list{
+    min-height: 40vh;
+  }
+  .c-list > .set1 > .box {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin-left: 30px;
+  }
+  .box > h3{
+    font-size: 9px;
+  }
+  .box >p{
+    width: 20px;
+    height: 20px;
+  }
+  .p-text >h1{
+    font-size: 16px;
+  }
+  .box-reverse > .cir {
+    width: 40px;
+    height: 40px;
+    right: -24px;
+  }
+  .cir > h1{
+    font-size: 15px;
+  }
+  .s-cover > .round {
+    width: 40px;
+    height: 40px;
+    left: -24px;
+    z-index: 1;
+  }
+  .challenge > h1 {
+    font-size: 30px;
+  }
+ .s-cover > .p-text {
+    height: 100px;
+    padding-left: 40px;
+    padding-top: 15px;
+  }
+  .one > .set1 > .box{
+    margin-left: -30px;
+  } 
+  .two > .set1 > .box{
+    margin-left: -30px;
+  } 
+  .c-list > .set1, .c-list > .set3 {
+    min-height: 200px;
+    width: 40%;
+  }
+  .c-list > .set2 {
+     width: 5px;
+     min-height: 45vh;
+  }
+  .round >h1{
+    font-size: 15px;
+  }
+  /* why choose */
+  .c-cover > .grow{
+    width: 25px;
+    height: 200px;
+  }
+  .grow > button{
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+  .choose > .c-cover{
+    gap: 5px;
+  }
+  .g-text > h4{
+    font-size: 15px;
+  }
+  .c-cover > .grow-text{
+    flex-grow: 0.8;
+  }
+  .show > p{
+     font-size: 10px;
+  }
+  /* box course */
+  .box-cover{
+    width: 100%;
+  }
+  /* apply */
+  .r-cover{
+    width: 90%;
+    height: 100px;
+  }
+  .r-txt > h4{
+    font-size: 13px;
+  }
+  .r-txt > button{
+     padding: 3px 10px;
+     font-size: 10px;
+  }
+  .r-pic {
+    left:-80px;
+    height: 100px;
+    width: 100%;
+  }
+  .r-pic > img{
+    width: 95%;
+    height: 120px;
+  }
+  .r-pic2 > img{
+    width: 80px;
+    height:80px;
+  }
+  .txtover{
+    height: 100px;
+  }
+  @keyframes r-move {
+    to{
+      width: 150%;
+      left: -50px;
+    }
+  }
+  @keyframes r2 {
+    to{
+      transform: translateX(280px);
+    }
+  }
+/* placement */
+.place > .placein{
+  height: 220px;
+} 
+.run-box > button{
+  padding: 7px 20px;
+}
+/* blog */
+.b-tx {
+  width: 90% !important;
+}
+.b-tx > h1{
+  font-size: 20px;
+}
+ /* leatn code */
+ .code-link{
+  min-height:30vh;
+ }
+ .code-cover {
+  width: 90%;
+  border-radius: 20px;
+  min-height: 100px;
+}
+.code-box2 > p {
+  font-size: 7px;
+  margin: 0;
+}
+.code-box2 > h2 {
+  font-size: 10px;
+}
+.code-box2 > a > button{
+  padding: 3px 10px;
+  font-size: 7px;
+}
+.code-box2{
+  padding: 5px;
+}
+ /* faq */
+ .faq{
+  flex-direction: column;
+  gap: 20px;
+}
+.faq > .faq-box1 {
+  width: 80%;
+  height: auto;
+}
+.faq-box1 > button{
+  padding: 5px 15px;
+  font-size: 10px;
+}
+.faq-box1 > p{
+  font-size: 15px;
+}
+.faq-box1 > h1 {
+  font-size: 35px;
+}
+.faq > .faq-box2{
+  width: 90%;
+}
+.faq-box2 > .faq-text{
+  height: 40px;
+}
+.faq-box2 > .roll{
+  height: 85px;
+}
+.faq-text > .f-txt{
+  gap: 5px;
+}
+.faq-text > .f-txt > p{
+  font-size: 9px;
+}
+.f-roll > p{
+  font-size: 9px;
+}
+/* designs for mobile code link */
+.code-box3{
+  width: 65px;
+  height: 65px;
+  border: 10px solid gold;
+  bottom: -19px;
+  right: -40px;
+}
+.code-box1{
+  width: 50px;
+  height: 50px;
+  border: 6px solid rgb(221, 189, 8);
+  top: -20px;
+  left: -15px;
+}
+}
+/* this for the tab */
+@media screen and (max-width:900px) and (min-width:700px){
+    .big-font > h1{
+        font-size: 40px;
+    }
+    .text > h4{
+        font-size: 18px;
+    }
+    .home > .text2{
+        width: 38%;
+    }
+    /* about */
+    .c-list > .set1 > .box {
+      height: 200px;
+      width: 200px;
+      padding: 33px;
+    }
+    .box > h3{
+      font-size: 15px;
+    }
+    .box >p{
+      width: 30px;
+      height: 30px;
+    }
+    .p-text >h1{
+      font-size: 24px;
+    }
+    .box-reverse > .cir {
+      width: 80px;
+      height: 80px;
+      right: -45px;
+    }
+    .s-cover > .round {
+      width: 80px;
+      height: 80px;
+      left: -44px;
+    }
+    .challenge > h1 {
+      font-size: 40px;
+    }
+    .g-text > p{
+      font-size: 15px;
+    }
+    .c-cover > .grow-text{
+      flex-grow: 0.6;
+    }
+    /* apply */
+    .r-cover{
+      width: 85%;
+    }
+    .r-pic{
+      left: -270px;
+    }
+    /* leatn code */
+    .code-cover {
+      width: 90%;
+      min-height: 230px;
+    }
+    .code-box2 > h2 {
+      font-size: 25px;
+    }
+    /* faq */
+    .faq{
+      flex-direction: column;
+      gap: 20px;
+    }
+    .faq > .faq-box1 {
+      width: 80%;
+      height: auto;
+    }
+    .faq > .faq-box2{
+      width: 80%;
+    }
+}
+@media screen and (max-width:1200px) and (min-width:900px){
+  .c-list > .set1 > .box {
+    height: 250px;
+    width: 250px;
+    padding: 33px;
+  }
+  .box > h3{
+    font-size: 20px;
+  }
+  .box >p{
+    width: 30px;
+    height: 30px;
+  }
+  .p-text >h1{
+    font-size: 30px;
+  }
+  .box-reverse > .cir {
+    width: 80px;
+    height: 80px;
+    right: -45px;
+  }
+  .s-cover > .round {
+    width: 80px;
+    height: 80px;
+    left: -44px;
+  }
+}

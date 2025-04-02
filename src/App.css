@@ -1,0 +1,16 @@
+:root{
+  --main:#288a08;
+   --sec:#edfbe2;
+   --txt:white
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.overall{
+  min-height: 100vh;
+  background-color: var(--sec);
+}
