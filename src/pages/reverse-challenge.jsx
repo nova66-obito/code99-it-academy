@@ -4,7 +4,7 @@ export default function ReverseChallenge(reverse){
     return(
         <>
            <div className={`c-list center`}>
-           <div className="set set3 block1">
+                <div className="set set3 block1">
                    <div className={`d-flex ${reverse.round}`}>
                     <div className="p-text">
                         <h1>foundation & setup</h1>

@@ -5,8 +5,8 @@ export default function Challenge(value) {
     return (
         <>
             <div className={`c-list center ${value.order}`}>
-                <div className="set set1">
-                    <div className="box block1">
+                <div className="set set1 block1">
+                    <div className="box ">
                         <h3>start with orientation,setting up your coding environment and learing the basics of your chosen technology stack</h3>
                         <p></p>
                     </div>

@@ -93,7 +93,7 @@ nav > h1{
      }
      .down{
         display: block;
-        top:65px;
+        top:75px;
         left: 0px;
         transition: all 0.5s;
      }
