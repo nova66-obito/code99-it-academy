@@ -41,7 +41,7 @@ nav{
     left: 0;
     background: var(--main);
 }
-.nav-cover2 > a:hover::after{
+.nav-cover2  > a:hover::after{
     width: 100%;
     transition: all 0.5s;
 }
@@ -68,7 +68,7 @@ nav > h1{
         flex-direction: column;
          display: flex;
          position: fixed;
-         width: 100%;
+         width: 50%;
          background-color: white;
          justify-content: center;
          align-items: center;
@@ -93,8 +93,8 @@ nav > h1{
      }
      .down{
         display: block;
-        top:75px;
-        left: 0px;
+        top:80px;
+        right: 20px;
         transition: all 0.5s;
      }
      .nav-cover3{
