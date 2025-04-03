@@ -362,6 +362,8 @@
 @media screen and (max-width: 700px) and (min-width:300px){
   .a-home{
     flex-direction: column;
+    padding-top: 50px;
+    min-height: 80vh;
   }
   .a-home > .text{
     width: 90%;
@@ -474,7 +476,7 @@
 /* this for the text */
 .cour-text >h1 {
  padding: 0 5px;
-  font-size: 35px;
+  font-size: 25px;
 }
 /* this for prof-head */
 .prof{
@@ -485,7 +487,7 @@
   }
   /* learn apply */
 .learn{
-    min-height: 50vh;
+    min-height: 20vh;
 }
 }
 

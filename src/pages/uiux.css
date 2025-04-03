@@ -421,12 +421,15 @@ form > div > small{
   }
   .about-train > .t-pic{
     width: 90%;
+    margin: 0;
+    height: 290px;
   }
   .t-pic > .t-photo {
     width: 100%;
   }
-  .t-pic > .t-photo {
-    width: 280px;
+  .t-photo > img{
+    height: 100%;
+    padding-top: 30px;
   }
   /* this for the tool */
   .tools-pic{
@@ -449,6 +452,9 @@ form > div > small{
     min-height: 150px;
   }
   /* this for the info */
+  .info{
+    min-height: 30vh;
+  }
   .info-cover{
     height: 120px;
     padding:20px 0;
@@ -470,6 +476,10 @@ form > div > small{
   .list-over > div{
     width: 90%;
   }
+  .learn-list {
+    min-height: 50vh;
+    padding: 0;
+  }
   .d-roll{
     height: 55px;
   }
@@ -490,7 +500,7 @@ form > div > small{
   }
    /* benefits */
    .benefits{
-    min-height: 50vh;
+    min-height: 35vh;
    }
    .benefits > .ben-cover{
     width: 90%;

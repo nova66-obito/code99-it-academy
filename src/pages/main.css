@@ -292,102 +292,75 @@
    color: var(--main);
    font-weight: bolder;
 }
-/* list of the challenge */
  /* this for the challenge list */
  .c-list{
-  min-height: 80vh;
+  min-height: 55vh;
   background:var(--main);
 }
-.c-list > .set1 ,.c-list > .set3{
-  min-height: 400px;
+/* this for the all box in the challenge list */
+.c-list > div:nth-child(1){
   width: 40%;
+  min-height: 300px;
 }
-/* this for the box details */
-.c-list > .set1 > .box {
-   background: var(--txt);
-   height: 350px;
-   width: 350px;
-   padding: 50px;
-   position: relative;
-   justify-self:center;
-   z-index: 1;
+.c-list > div:nth-child(3){
+  width: 40%;
+  min-height: 300px;
 }
-.box > p{
-  top: 10%;
-  right: -10px;
-  transform: rotate(45deg);
-  position: absolute;
-  width: 50px;
-  height: 50px;
+.c-list > .set2{
+  width: 10px;
+  min-height:55vh;
   background:var(--txt);
+  align-items: flex-start;
+  padding-top:40px ;
+}
+.c-list > .set1{
+  align-items: flex-start;
+}
+.c-list > .set1 > .s-box {
+  background: var(--txt);
+  width: 70%;
+  height:280px; 
+  padding: 20px;
+  position: relative;
+} 
+/* this for the p */
+.s-box > p{
+  width:40px;
+  height: 40px;
+  background:var(--txt);
+  transform:rotate(130deg);
+  position: absolute;
   z-index: -1;
 }
-/* this for the white line in center */
-.c-list > .set2{
-   width: 10px;
-   min-height: 80vh;
-   background:var(--txt);
+/* this for the left side */
+.left-p > p{
+  top:40px;
+  left: -18px;
 }
-/* this for  the content in the box */
-.set3 > .s-cover{
-  height: 200px;
-  position: relative;
-  /* background: violet; */
+.c-list > .set3 {
+  align-items: flex-start;
 }
-.s-cover > .round{
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  background-color: black;
-  position: absolute;
-  top:0;
+/* this for th revese box */
+.rev-p > P{
+  top: 40px;
+  right: -17px;
+}
+/* this for the right side */
+.s-cover > .p-text > h1{
   color: var(--txt);
-  left: -52px;
-  display: grid;
-  place-content: center;
+  padding: 35px 0;
 }
-.s-cover > .p-text{
-  height: 100px;
-  padding-left: 60px;
-  padding-top: 20px;
-  /* background:green; */
-}
-.round >h1{
-  font-weight: bolder;
-}
-.p-text > h1{
-  font-weight: bolder;
-  color: var(--txt);
-}
-/* reverse box order */
-.set1 > .box-2 > p{
-  left: -7px;
-}
-.box-reverse{
-  height: 200px;
-  position: relative;
-  /* background-color: aqua; */
-  justify-content: center;
-}
-.box-reverse > .cir{
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  background-color: black;
-  top:0;
-  right: -52px;
-  position: absolute;
-  color: var(--txt);
-  display: grid;
-  place-content: center;
-  z-index: 1;
-}
-.box-reverse > .p-text{
-  height: 100px;
-  padding-top: 20px;
-  padding-right: 50px;
-  /* background: wheat; */
-  position: relative;
+/* this for the left side */
+.set2 > .round{
+   width: 80px;
+   position: absolute;
+   height: 80px;
+   background-color: black;
+   color: var(--txt);
+   display: grid;
+   place-content: center;
+   border-radius: 50%;
+   z-index: 1;
 }
 /* why chosse us */
 .choose{
@@ -812,6 +785,7 @@ button > a{
   .home{
     flex-direction: column;
     padding-top:40px ;
+    min-height: 80vh;
   }
   .home > .text1{
     width: 100%;
@@ -838,6 +812,9 @@ button > a{
   .load-num > h1{
     font-size: 20px;
   }
+  .run-cover{
+     padding: 20px 0;
+  }
   .cover{
     font-size: 10px;
     width: 95%;
@@ -848,6 +825,7 @@ button > a{
   }
   .about-us > .details1 ,.about-us > .details2{
     width: 100%;
+    min-height: 375px;
   }
   .about-us > .details2{
     margin-top: -80px;
@@ -881,64 +859,55 @@ button > a{
     width: 100%;
   }
   /* challenge */
+  .challenge > h2 {
+    font-size: 20px;
+  }
+  .challenge > h1 {
+    font-size: 25px;
+  }
+  /* challenge list */
   .c-list{
     min-height: 40vh;
   }
-  .c-list > .set1 > .box {
-    height: 100px;
-    width: 100px;
-    padding: 10px;
-    margin-left: 30px;
-  }
-  .box > h3{
-    font-size: 9px;
-  }
-  .box >p{
-    width: 20px;
-    height: 20px;
-  }
-  .p-text >h1{
-    font-size: 16px;
-  }
-  .box-reverse > .cir {
-    width: 40px;
-    height: 40px;
-    right: -24px;
-  }
-  .cir > h1{
-    font-size: 15px;
-  }
-  .s-cover > .round {
-    width: 40px;
-    height: 40px;
-    left: -24px;
-    z-index: 1;
-  }
-  .challenge > h1 {
-    font-size: 30px;
-  }
- .s-cover > .p-text {
-    height: 100px;
-    padding-left: 40px;
-    padding-top: 15px;
-  }
-  .one > .set1 > .box{
-    margin-left: -30px;
-  } 
-  .two > .set1 > .box{
-    margin-left: -30px;
-  } 
-  .c-list > .set1, .c-list > .set3 {
-    min-height: 200px;
-    width: 40%;
-  }
   .c-list > .set2 {
-     width: 5px;
-     min-height: 45vh;
-  }
-  .round >h1{
-    font-size: 15px;
-  }
+    min-height: 40vh;
+    padding-top: 8px;
+ }
+ .s-box > h4{
+   font-size: 10px;
+ }
+ .c-list > div:nth-child(3){
+   min-height: 200px;
+   width: 50%;
+ }
+ .c-list > div:nth-child(1){
+   min-height: 200px;
+   width: 50%;
+ }
+ .left-p > p {
+   left: -9px;
+ }
+ .rev-p > P {
+   right: -9px;
+ }
+ .s-box > p {
+   width: 20px;
+   height: 20px;
+ }
+ .c-list > .set1 > .s-box{
+   height: 150px;
+ }
+ .s-cover > .p-text > h1{
+   font-size: 13px;
+ }
+ .set2 > .round{
+   width: 40px;
+   height: 40px;
+   margin-top: 22px;
+ }
+ .round > h1{
+   font-size:15px ;
+ }
   /* why choose */
   .c-cover > .grow{
     width: 25px;
@@ -966,6 +935,9 @@ button > a{
     width: 100%;
   }
   /* apply */
+  .rocket{
+    min-height: 20vh;
+  }
   .r-cover{
     width: 90%;
     height: 100px;
@@ -1006,21 +978,25 @@ button > a{
   }
 /* placement */
 .place > .placein{
-  height: 220px;
+  min-height: 220px;
+  gap: 10px;
 } 
 .run-box > button{
   padding: 7px 20px;
 }
 /* blog */
+.blog{
+  gap:10px
+}
 .b-tx {
   width: 90% !important;
 }
 .b-tx > h1{
-  font-size: 20px;
+  font-size: 12px;
 }
  /* leatn code */
  .code-link{
-  min-height:30vh;
+  min-height:23vh;
  }
  .code-cover {
   width: 90%;
@@ -1105,34 +1081,39 @@ button > a{
     .home > .text2{
         width: 38%;
     }
-    /* about */
-    .c-list > .set1 > .box {
-      height: 200px;
-      width: 200px;
-      padding: 33px;
+    /* challenge */
+    .challenge > h1 {
+      font-size: 40px;
     }
-    .box > h3{
-      font-size: 15px;
+    .c-list > .set2 {
+       min-height: 60vh;
+       padding-top: 78px;
     }
-    .box >p{
+    .c-list > div:nth-child(3){
+      min-height: 200px;
+    }
+    .c-list > div:nth-child(1){
+      min-height: 200px;
+    }
+    .left-p > p {
+      left: -12px;
+    }
+    .rev-p > P {
+      right: -12px;
+    }
+    .s-box > p {
       width: 30px;
       height: 30px;
     }
-    .p-text >h1{
-      font-size: 24px;
+    .c-list > .set1 > .s-box{
+      height: 200px;
     }
-    .box-reverse > .cir {
-      width: 80px;
-      height: 80px;
-      right: -45px;
+    .s-cover > .p-text > h1{
+      font-size: 25px;
     }
-    .s-cover > .round {
-      width: 80px;
-      height: 80px;
-      left: -44px;
-    }
-    .challenge > h1 {
-      font-size: 40px;
+    .set2 > .round{
+      width: 60px;
+      height: 60px;
     }
     .g-text > p{
       font-size: 15px;
@@ -1168,30 +1149,15 @@ button > a{
       width: 80%;
     }
 }
-@media screen and (max-width:1200px) and (min-width:900px){
-  .c-list > .set1 > .box {
-    height: 250px;
-    width: 250px;
-    padding: 33px;
-  }
-  .box > h3{
-    font-size: 20px;
-  }
-  .box >p{
-    width: 30px;
-    height: 30px;
-  }
-  .p-text >h1{
+@media screen and (max-width: 1200px) and (min-width:900px){
+  .s-cover > .p-text > h1 {
     font-size: 30px;
+    padding: 22px 0;
   }
-  .box-reverse > .cir {
-    width: 80px;
-    height: 80px;
-    right: -45px;
+  .left-p > p{
+    top: 30px;
   }
-  .s-cover > .round {
-    width: 80px;
-    height: 80px;
-    left: -44px;
+  .rev-p > p{
+    top:30px;
   }
 }

@@ -42,7 +42,6 @@ export default function Overall(){
   },[])
 
   // this for the number loading
-   let [load , setload] = useState(false);
 
         return(
         <>
@@ -82,7 +81,7 @@ export default function Overall(){
                   duration={2}
                   enableScrollSpy={true}
                   scrollSpyDelay={500}
-                 >
+                 >q
                  </CountUp>+
                 </h1>
                   <p>students</p>
@@ -136,10 +135,10 @@ export default function Overall(){
               <h2 className="text-center">timeline of 99-days coding challenge</h2>
               <h1 className="text-center">99 days of coding challenge</h1>
                {/* lists */}
-                <Challenge order={'one'} num={'1'}/>
-                <ReverseChallenge count={'2'} class={"box-2"} round={"box-reverse"}/>
-                <Challenge order={'two'} num={'3'}/>
-                <ReverseChallenge count={'4'} class={"box-2"} round={"box-reverse"}/>
+                <Challenge order={'c-list1'} num={'1'}  box={"rev-p"} round={"r-left"}/>
+                <ReverseChallenge count={'2'} round={"c-list2"} box={"left-p"}  round2={"r-right"}/>
+                <Challenge order={'c-list3'} num={'3'}  box={"rev-p"}  round={"r-left"}/>
+                <ReverseChallenge count={'4'} round={"c-list4"} box={"left-p"}  round2={"r-right"}/>
            </div>
           {/* this forthe why us? */}
           <div className="choose center">

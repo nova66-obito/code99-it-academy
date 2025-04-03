@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { PiStudentFill } from "react-icons/pi";
 import { FaInstagram } from "react-icons/fa";
 import { IoIosFastforward } from "react-icons/io";
-import { FcAbout } from "react-icons/fc";
 import { IoMdContact } from "react-icons/io";
 import { FaHome } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
@@ -11,6 +10,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLocationArrow } from "react-icons/fa";
+import { FaClipboardQuestion } from "react-icons/fa6";
 import "./footer.css"
 export default function Footer(){
    return(
@@ -24,7 +24,7 @@ export default function Footer(){
             <div className="f-navigation f-al">
                 <b>navigation</b>
                 <Link to="/"><FaHome /> home</Link>
-                <Link to="/about"><FcAbout /> about us</Link>
+                <Link to="/about"><FaClipboardQuestion /> about us</Link>
                 <a href="#course"><PiStudentFill />course</a>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYxFdD1a5TpMMBthUV8piowtGEUtcof5k01apWs1tuSOFX7w/viewform"><IoIosFastforward /> admission</a>
                 <Link to="/contact"><IoMdContact /> contact us</Link>

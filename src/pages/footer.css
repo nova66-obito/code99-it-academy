@@ -12,6 +12,14 @@ footer{
     align-items:flex-start;
     flex-direction: column;
 }
+.f-al > a{
+    text-decoration: none;
+    color: black;
+}
+.f-al > a:hover{
+    color: var(--main);
+    text-decoration: underline black;
+}
 .f-cover > div{
     width: 10%;
 }
@@ -64,7 +72,7 @@ a{
     .f-cover > .git {
         width: 90%;
     }
-    .lic > h1{
+    .lic > h5{
         font-size: 12px;
     }
 
