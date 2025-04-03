@@ -906,6 +906,12 @@ button > a{
    font-size:15px ;
  }
   /* why choose */
+  .choose{
+    min-height: 40vh
+  }
+  .choose > h1{
+    padding-top: 20px;
+  }
   .c-cover > .grow{
     width: 25px;
     height: 200px;

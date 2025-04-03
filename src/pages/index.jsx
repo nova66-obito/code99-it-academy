@@ -142,7 +142,7 @@ export default function Overall(){
            </div>
           {/* this forthe why us? */}
           <div className="choose center">
-             <h1 className="text-center p-2">why choose us?</h1>
+             <h1>why choose us?</h1>
              <div className="c-cover center">
                 <Grow num={'1'} class={"c-text1"}/>
              </div> 
