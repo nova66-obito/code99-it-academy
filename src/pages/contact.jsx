@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import "./contact.css"
-import Nav from "../navbar";
-import Footer from './footer'
 import { IoIosCall } from "react-icons/io";
 import { IoMdMail } from "react-icons/io";
 import { FaBullhorn } from "react-icons/fa";
@@ -145,7 +143,6 @@ export default function Contact() {
         <map className="pt-3" name="loction">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9364977802843!2d80.21896167330347!3d12.975913414787286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d70050d495f%3A0xe1b0d7791146206d!2sCode99%20IT%20Academy!5e0!3m2!1sen!2sin!4v1743050797016!5m2!1sen!2sin" width={"100%"} height={"200px"} allowFullScreen={""} loading={"lazy"} referrerPolicy={"no-referrer-when-downgrade"}></iframe>
         </map>
-        <Footer />
       </section>
     </>
   )

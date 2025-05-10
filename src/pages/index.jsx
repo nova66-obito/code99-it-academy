@@ -13,7 +13,6 @@ import Run from './run-place';
 import Blog from './blog';
 import Learn from "./learning";
 import Roll from "./faqroll";
-import Footer from "./footer";
 import { Link } from "react-router-dom";
 import cur from '../assets/java.png';
 import cur2 from '../assets/python.png';
@@ -238,8 +237,6 @@ export default function Overall(){
                <Roll con={"whar is coding? why it is important?"}/>
             </div>
          </div>
-         {/* footer */}
-         <Footer/>
          </section>
         </>
     )

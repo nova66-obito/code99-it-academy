@@ -14,7 +14,6 @@ import pro1 from "../assets/pic1.png";
 import pro3 from "../assets/pic3.png";
 import pro4 from "../assets/pic4.png";
 import Learn from "./learning";
-import Footer from "./footer"
 import { IoBookOutline } from "react-icons/io5";
 import { RiMacbookLine } from "react-icons/ri";
  export default function About(){
@@ -185,8 +184,6 @@ import { RiMacbookLine } from "react-icons/ri";
                <div className="learn center">
                   <Learn/>
                </div>
-               {/* this for the footer */}
-               <Footer/>
            </section>
          </main>
         </>
