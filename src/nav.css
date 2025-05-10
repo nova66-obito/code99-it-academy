@@ -71,15 +71,17 @@ nav > h1{
         flex-direction: column;
          display: flex;
          position: fixed;
-         width: 50%;
+         width: 100%;
          background-color: white;
          justify-content: center;
          align-items: center;
-         top:-400px;
-         min-height: 50vh;
+         top:-1000px;
+         min-height: 100vh;
          position: fixed;
          z-index: 99;
          padding: 20px 0;
+         opacity: 0;
+         
      }
      .up{
         display: none;
@@ -96,8 +98,9 @@ nav > h1{
      }
      .down{
         display: block;
-        top:80px;
-        right: 20px;
+        top:0px;
+        right: 0px;
+        opacity: 1;
         transition: all 0.5s;
      }
      .nav-cover3{
@@ -108,6 +111,7 @@ nav > h1{
         font-size: 30px;
         color: var(--main);
         display: block;
+        z-index: 99;
      }
      nav{
         width: 90%;

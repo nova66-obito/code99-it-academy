@@ -12,7 +12,6 @@ import des from '../assets/desgin.png'
 import { IoCall } from "react-icons/io5";
 import Detail from "./learn-detail";
 import Quest from "./quest-roll";
-import Footer from "./footer.jsx"
 import "./uiux.css";
 import Fromcourse from "./form-course.jsx";
 export default function Coursepython(){  
@@ -152,8 +151,6 @@ export default function Coursepython(){
                    <Quest txt={"what toos will learn to use full stact web devloper"}/>
                 </div>
              </div>
-             {/* footer */}
-             <Footer/>
           </section>
         </>
     )
